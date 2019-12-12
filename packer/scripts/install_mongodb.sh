@@ -1,7 +1,7 @@
 #!/bin/bash
-echo -----------------------------------------------------------------
-echo -                    Mongo - Ubuntu 14.04                       -
-echo -----------------------------------------------------------------
+#echo -----------------------------------------------------------------
+#echo -                    Mongo - Ubuntu 14.04                       -
+#echo -----------------------------------------------------------------
 
 #apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
 
@@ -20,10 +20,10 @@ apt update
 #echo "mongodb-org-tools hold" | sudo dpkg --set-selections
 
 #This is to install the latest stable version
-apt install -y mongodb
+apt-get install -y mongodb
 
 #If you want to install a specific version
 #apt-get install mongodb-org=2.6.0 mongodb-org-server=2.6.0 mongodb-org-shell=2.6.0 mongodb-org-mongos=2.6.0 mongodb-org-tools=2.6.0
 
 systemctl start mongodb
-systemctl anable mongodb
+systemctl enable mongodb
